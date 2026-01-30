@@ -14,7 +14,12 @@ const ai = new GoogleGenAI({
 });
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: [
+        'http://localhost:5173',
+        'https://job-tracker.vercel.app'
+    ]
+}));
 app.use(express.json());
 
 // Health check endpoint
