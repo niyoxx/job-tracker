@@ -29,7 +29,7 @@ Deployment
 - Github
 
 # Live Demo
-Frontend: https://job-tracker-wheat-two.vercel.app 
+Frontend: https://job-tracker-wheat-two.vercel.app &
 Backend API: https://personal-job-application-tracker.onrender.com
 
 # Installation 
@@ -42,7 +42,6 @@ cd job-tracker
 cd server
 npm install
 
-# Create .env file
 cat > .env << EOF
 PORT=8080
 GEMINI_API_KEY=your_api_key_here
@@ -52,7 +51,6 @@ EOF
 cd ../client
 npm install
 
-# Create .env file
 cat > .env << EOF
 VITE_API_URL=http://localhost:8080
 EOF
