@@ -17,7 +17,7 @@ const ai = new GoogleGenAI({
 app.use(cors({
     origin: [
         'http://localhost:5173',
-        'https://job-tracker.vercel.app'
+        'https://job-tracker-wheat-two.vercel.app'
     ]
 }));
 app.use(express.json());
